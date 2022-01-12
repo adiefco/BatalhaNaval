@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Main extends VariaveisGlobais {
 
@@ -20,8 +19,12 @@ public class Main extends VariaveisGlobais {
       jogadores.obterNomeDoJogador();
       String nomeJogador2 = jogadores.obterNomeJogador();
 
+      InserirNaviosNosTabuleiros naviosInseridosNoTabuleiro = new InserirNaviosNosTabuleiros();
+      naviosInseridosNoTabuleiro.inserirOsNaviosNosTabuleirosDosJogadores();
+
       ExibirTabuleiroDosJogadores tabuleiroDosJogadores = new ExibirTabuleiroDosJogadores();
-      tabuleiroDosJogadores.exibirTabuleiro(nomeJogador1, tabuleiroJogador1);
-      tabuleiroDosJogadores.exibirTabuleiro(nomeJogador2, tabuleiroJogador2);
+      tabuleiroDosJogadores.exibirTabuleiro(nomeJogador1, tabuleiroJogador1, true);
+      tabuleiroDosJogadores.exibirTabuleiro(nomeJogador2, tabuleiroJogador2, true);
+
    }
 }

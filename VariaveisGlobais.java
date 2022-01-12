@@ -1,6 +1,13 @@
 public class VariaveisGlobais {
    //VARIÁVEIS:
 
+   static final int VAZIO = 0;
+   static final int NAVIO_POSICIONADO = 1;
+   static final int TIRO_CERTEIRO = 2;
+   static final int TIRO_NA_AGUA = 3;
+   static final int TIRO_CERTEIRO_NAVIO_POSICIONADO = 4;
+   static final int TIRO_NA_AGUA_NAVIO_POSICIONADO = 5;
+
    public static int tamanhoDoTabuleiroX = 10;
    public static int tamanhoDoTabuleiroY = 10;
    public static int quantidadeDeNavios = 10;
